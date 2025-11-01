@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #00adb5;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #00adb5, #393e46);
+  color: #fff;
+}
+
+.hero .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+}
+
+.hero h1 span {
+  color: #222;
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #fff;
+  color: #111;
+  border-radius: 25px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #00adb5;
+  color: #fff;
+}
+
+/* Content Sections */
+.content {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills, .awards, .contact-info {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.skills li, .awards li, .contact-info li {
+  padding: 0.5rem 0;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
