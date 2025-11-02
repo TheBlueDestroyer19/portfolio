@@ -1,4 +1,27 @@
 /* ---------------------------
+   Layout Fix for Sticky Footer
+---------------------------- */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Make main sections flex-grow */
+header, footer {
+  flex-shrink: 0;
+}
+
+section.content,
+section.hero {
+  flex-grow: 1;
+}
+
+/* ---------------------------
    Global Reset & Base Styles
 ---------------------------- */
 * {
@@ -228,6 +251,69 @@ footer {
 
 footer p span {
   color: #00e0ff;
+}
+
+/* ---------------------------
+   Positions of Responsibility Page
+---------------------------- */
+.por-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.por-card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  text-align: left;
+  animation: fadeIn 1s ease forwards;
+}
+
+.por-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.15);
+}
+
+.por-card h3 {
+  color: #00e0ff;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.tenure {
+  font-size: 0.95rem;
+  color: #a0aec0;
+  margin-bottom: 0.8rem;
+}
+
+.tenure span {
+  color: #00e0ff;
+}
+
+.desc {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.highlights {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+}
+
+.highlights li {
+  margin-bottom: 0.4rem;
+  transition: 0.3s;
+}
+
+.highlights li:hover {
+  color: #00e0ff;
+  transform: translateX(4px);
 }
 
 /* ---------------------------
