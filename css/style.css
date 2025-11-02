@@ -125,8 +125,16 @@ body {
   margin-bottom: 1rem;
 }
 
-.hero h1 span {
+.hero h1 a {
   color: #00e0ff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.hero h1 a:hover {
+  color: #5ff8ff;
+  transform: scale(1.05);
 }
 
 .hero p {
@@ -135,7 +143,7 @@ body {
   color: #ddd;
 }
 
-.btn {
+.btn{
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.8rem;
@@ -147,10 +155,62 @@ body {
   text-decoration: none;
 }
 
-.btn:hover {
+.btn:hover, .float-btn:hover {
   background: #fff;
   transform: scale(1.05);
 }
+
+/* ---------------------------
+   Floating Buttons (Home Page)
+---------------------------- */
+.floating-buttons {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 2rem;
+}
+
+.float-btn {
+  position: absolute;
+  background: linear-gradient(135deg, #00e0ff, #00b8d4);
+  color: #0f172a;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.35s ease;
+}
+
+/* Random (but visually balanced) positions */
+.floating-buttons a:nth-child(1) {
+  top: 20%;
+  left: 15%;
+}
+
+.floating-buttons a:nth-child(2) {
+  top: 20%;
+  right: 20%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-buttons {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .float-btn {
+    position: static;
+    width: 70%;
+    text-align: center;
+  }
+}
+
 
 /* ---------------------------
    Content Sections
