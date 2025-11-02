@@ -10,7 +10,14 @@
   <header>
     <nav class="navbar">
       <div class="logo">Salil</div>
-      <ul class="nav-links">
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -21,26 +28,50 @@
     </nav>
   </header>
 
+  <div class="overlay" id="overlay"></div>
+  
   <section class="content">
     <h2>About Me</h2>
-    <p>I'm Salil, a full stack developer who has a keen interest and passion for solving real world problems encountered by people. In terms of application building I firmly believe that the simplicity of its interface matters more that a fancy one because that is where everyone can access its features. Also, the application should not be overwhelmed by unecessary features that are complex to use and test.</p>
+    <p>
+      I'm <strong>Salil</strong>, a full-stack developer passionate about building
+      elegant, efficient, and human-centered web applications. I believe
+      simplicity in design enhances accessibility and usability more than flashy
+      features ever could. My goal is to craft technology that’s intuitive,
+      impactful, and meaningful.
+    </p>
 
+    <!-- Skills Section -->
     <h3>Skills & Tools</h3>
-    <ul class="skills">
-      <li>React</li>
-      <li>Django</li>
-      <li>Git & GitHub</li>
-      <li>Node.js and Express</li>
-      <li>Problem Solving & Debugging</li>
-      <li>MongoDB and MySQL</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">Data Structures and Algorithms</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Tailwind</div>
+      <div class="skill-card">Django</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Node.js & Express</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">Problem Solving</div>
+      <div class="skill-card">Debugging</div>
+    </div>
 
+    <!-- Education Section -->
     <h3>Education</h3>
-    <p><strong>Bachelor of Technology (Computer Science and Engineering)</strong><br>Visvesvaraya National Institute of Technology, Nagpur, 2023-2027</p>
+    <div class="education-card">
+      <h4>Bachelor of Technology (Computer Science and Engineering)</h4>
+      <p class="school">Visvesvaraya National Institute of Technology, Nagpur</p>
+      <p class="tenure">2023 – 2027</p>
+      <p class="desc">
+        Coursework: Web Technologies, Data Structures, Algorithms, Database
+        Systems, and Software Engineering.  
+        Member of ACM Student Chapter and active contributor to open-source initiatives.
+      </p>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Salil</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
